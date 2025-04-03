@@ -71,7 +71,7 @@ function App() {
     return <option key={city} value={city}>{city}</option>;
   });
 
-  const statement = selectedCity ? (<h2>You Selected<span style={{ fontWeight: "bold" }}>{","}{selectedCity}</span> <span style={{ fontWeight: 200 }}>{" "} {selectedState} {selectedCountry}</span></h2>) : null;
+  const statement = selectedCity ? (<h2>You Selected <span style={{ fontWeight: "bold" }}>{selectedCity}{","}</span> <span style={{ fontWeight: 200 }}>{" "}{selectedState}{", "}{selectedCountry}</span></h2>) : null;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
